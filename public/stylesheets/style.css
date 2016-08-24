@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: 'wf_segoe-ui', Tahoma, Verdana, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.c-icon {
+  display: inline-block;
+  background-image: url(../images/iconset.png);
+  background-repeat: no-repeat;
+}
+@font-face {
+  font-family: 'wf_segoe-ui';
+  src: url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/light/latest.eot');
+  src: url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/light/latest.eot?#iefix') format('embedded-opentype'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/light/latest.woff') format('woff'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/light/latest.ttf') format('truetype'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/light/latest.svg#web') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'wf_segoe-ui';
+  src: url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/semilight/latest.eot');
+  src: url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/semilight/latest.eot?#iefix') format('embedded-opentype'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/semilight/latest.woff') format('woff'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/semilight/latest.ttf') format('truetype'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/semilight/latest.svg#web') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'wf_segoe-ui';
+  src: url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/normal/latest.eot');
+  src: url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/normal/latest.eot?#iefix') format('embedded-opentype'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/normal/latest.woff') format('woff'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/normal/latest.ttf') format('truetype'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/normal/latest.svg#web') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'wf_segoe-ui';
+  src: url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/italic/latest.eot');
+  src: url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/italic/latest.eot?#iefix') format('embedded-opentype'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/italic/latest.woff') format('woff'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/italic/latest.ttf') format('truetype'), url('https://c.s-microsoft.com/static/fonts/segoe-ui/cyrillic/italic/latest.svg#web') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+.c-files {
+  font-size: 0;
+  margin-left: -2%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.c-files__info {
+  color: #000;
+  height: 20px;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.c-files__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  padding: 15px 20px;
+  background-color: #fff;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  position: relative;
+  cursor: w-resize;
+  margin-right: -0.25em;
+  padding-top: 0;
+  box-shadow: 0px 3px 10px -8px #000;
+}
+.c-files__item input {
+  width: 100%;
+  border: 1px solid rgba(238, 238, 238, 0.8);
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  outline: none;
+}
+.c-files__item--error {
+  opacity: 0.5;
+}
+.c-files__item--error .c-files__info {
+  color: red;
+}
+.c-files__img {
+  height: 100px;
+  background-size: cover;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.c-files__remove {
+  position: absolute;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: #c0c0c0;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.3s ease-in;
+}
+.c-files__remove:before {
+  content: "×";
+  font-size: 24px;
+  display: inline-block;
+  color: #fff;
+}
+.c-files__remove:hover {
+  background-color: #dd4907;
+}
+.c-files .ui-sortable-placeholder {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  visibility: visible !important;
+}
+.c-page__main {
+  background-color: #eee;
+  padding: 40px 0;
+  margin-bottom: 50px;
+}
+.c-page__aside {
+  text-align: center;
+}
+.c-page__inner {
+  width: 960px;
+  margin: 0 auto;
+}
+.c-page .c-preview {
+  display: inline-block;
+}
+.c-form {
+  font-size: 0;
+  margin-left: -2%;
+}
+.c-form__unit {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-size: 16px;
+}
+.c-form--block {
+  margin-left: 0;
+  width: 300px;
+}
+.c-form--block .c-form__unit {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+.c-form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+.c-form__control {
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  font-family: inherit;
+  line-height: 1;
+  padding-bottom: 2px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  box-shadow: 0px 3px 10px -8px #000;
+  transition: all 0.3s ease-in-out;
+}
+.c-form__control:focus {
+  border-color: #009e68;
+}
+.c-form__control[readonly] {
+  opacity: .2;
+}
+.c-form__btn {
+  line-height: 1;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  border: 0;
+  width: 100%;
+  background-color: #009e68;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  color: #fff;
+  transition: background 0.3s ease-in;
+  display: inline-block;
+  text-decoration: none;
+}
+.c-form__btn:hover {
+  background-color: #006b46;
+}
+.c-form__btn:active {
+  background-color: #007a51;
+  transform: scale(0.98);
+}
+.c-form__btn--secondary {
+  background-color: #686868;
+}
+.c-form__btn--secondary:hover {
+  background-color: #4f4f4f;
+}
+.c-form__btn--secondary:active {
+  background-color: #565656;
+  transform: scale(0.98);
+}
+.c-form__title {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: -2%;
+  font-size: 0;
+}
+.list__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 18%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  font-size: 16px;
+}
