@@ -5,6 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <title>Philips HTML Banner {{ ctx.name }}</title>
+  <meta name="ad.size" content="width={{ ctx.width }},height={{ ctx.height }}">
+  <!--script src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script-->
 </head>
 
 <body style="margin:0;padding:0;">
@@ -35,7 +37,7 @@
 
       this.init = function() {
         this.timer();
-        console.log(items[0].getAttribute('data-duration'))
+        //console.log(items[0].getAttribute('data-duration'))
       }
 
       this.timer = function() {
@@ -46,7 +48,7 @@
         var r = items[that.active].getAttribute('data-fadespeed') || 500;
         var fadeSpeed = Math.ceil(Math.ceil(r) / 100);
 
-        console.log(+t, fadeSpeed)
+        //console.log(+t, fadeSpeed)
 
         setTimeout(function() {
           that.setActive(that.active);
@@ -56,7 +58,7 @@
           items[that.active].style.opacity = 0;
           items[that.prev].style.zIndex = 1;
           items[that.preprev].style.zIndex = 0;
-          console.log(that.prev, that.active, that.next)
+          //console.log(that.prev, that.active, that.next)
           fadeIn(items[that.active], fadeSpeed)
           that.timer();
         }, +t);
